@@ -37,23 +37,30 @@ Claude AI接入飞书Lark
     > 然后在服务器端运行以下命令```pip install flask```、```pip install requests```、```pip install json (可选)```
 
 5. 验证成功后【添加事件】
+
   ![](https://i.imgur.com/Gm17L7L.png)
+  
   > 期间部分事件的的开启可能需要你所在的企业的飞书管理员审核,切换账号或要求对应人员审核即可
   > 后续可根据自身需要开启更多【事件订阅】或【权限】
   e.g..权限示例：
   ![](https://i.imgur.com/chWMnKM.png)
   
 6. 点击【版本管理与发布】并创建版本
+
   ![](https://i.imgur.com/9mUPqU7.png)
+  
 7. 填写版本信息并添加可用范围，如仅允许自己使用则仅选自己即可
+
   ![](https://i.imgur.com/zDcN64V.png)
 
 8. 根据上述步骤中获取的信息，修改```.env.bak```,中对应的字段(*图中为含中文的字段，格式可参考api部分*)，并保存为```.env```文件
+
   ![](https://i.imgur.com/1zC0C1s.png)
 
 9. 将本项目上传至服务器后，确保目录结构中需含有```.env```文件（假设所有文件已上传至服务器的```/usr/app/Slack_plus/```）：
   
   ![](https://i.imgur.com/ebo2CMA.png)
+  
 11. 使用ssh软件(如**terminus**)登陆服务器终端后依次运行下述命令
 - ```cd /usr/app/Slack_plus/```
 - ```pip install -r requirements.txt```
@@ -65,5 +72,6 @@ Claude AI接入飞书Lark
 
 ### 部署完成查看效果
 > 登陆飞书，开始使用即可
+
 ![](https://i.imgur.com/zazDK9d.png)
-![](https://i.imgur.com/AJ2eW3V.png)
+![](https://i.imgur.com/DLU8w1A.png)
